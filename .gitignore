@@ -1,7 +1,51 @@
+# ==========================================
+# 1. Test Çıktıları ve Ekran Görüntüleri
+# ==========================================
+# Testlerin ürettiği görseller depoya girmemeli
+screenshots/
+screenshots/*
+*.png
+*.jpeg
+*.jpg
+
+# Test Raporları (ileride ekleyeceğin Extent/Allure raporları için)
+reports/
+test-output/
+target/surefire-reports/
+
+# ==========================================
+# 2. Derleme (Build) ve Bağımlılık Çıktıları
+# ==========================================
+# Maven / Gradle çıktıları
 target/
+build/
+.gradle/
+
+# ==========================================
+# 3. IDE ve Editör Özel Dosyaları
+# ==========================================
+# IntelliJ IDEA
 .idea/
 *.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.settings/
 .classpath
 .project
-.settings/
-*.log
+bin/
+
+# VS Code
+.vscode/
+
+# ==========================================
+# 4. İşletim Sistemi & Sürücü Dosyaları
+# ==========================================
+.DS_Store
+Thumbs.db
+
+# Yerel sürücü ikilileri (Driver'lar projeye elle eklendiyse)
+*.exe
+*.driver
