@@ -11,13 +11,13 @@ Yazılım test otomasyonu alanına yeni başlayanlar ve kendini geliştirmek ist
 Proje adım adım yeni bir mimari yapı, entegrasyon veya best Practices eklenerek güncellenmektedir:
 
 - [x] **Adım 1:** Selenium 4 Web Driver kurulumu, Chrome yönetimi ve ekran görüntüsü (Screenshot) alma mekanizması.
-- [ ] **Adım 2:** Element bekleme stratejileri (Explicit Wait / WebDriverWait) ve senkronizasyon.
-- [ ] **Adım 3:** Page Object Model (POM) mimarisine geçiş (`pages` ve `tests` paket yapısı).
-- [ ] **Adım 4:** TestNG / JUnit 5 entegrasyonu ve Assertion (Doğrulama) yapıları.
-- [ ] **Adım 5:** `BaseTest` ve `DriverFactory` ile Singleton Pattern mantığında sürücü yönetimi.
-- [ ] **Adım 6:** Data-Driven Testing (DDT) - JSON/Excel veya TestNG DataProvider ile parametreli testler.
-- [ ] **Adım 7:** Otomatik HTML Raporlama (Extent Reports / Allure Report).
-- [ ] **Adım 8:** GitHub Actions entegrasyonu ile CI/CD Pipeline (Headless test çalıştırma).
+- [x] **Adım 2:** Element bekleme stratejileri (Explicit Wait / WebDriverWait) ve senkronizasyon.
+- [x] **Adım 3:** Page Object Model (POM) mimarisine geçiş (`pages` ve `tests` paket yapısı).
+- [x] **Adım 4:** TestNG / JUnit 5 entegrasyonu ve Assertion (Doğrulama) yapıları.
+- [x] **Adım 5:** `BaseTest` ve `DriverFactory` ile Singleton Pattern mantığında sürücü yönetimi.
+- [x] **Adım 6:** Data-Driven Testing (DDT) - JSON/Excel veya TestNG DataProvider ile parametreli testler.
+- [x] **Adım 7:** Otomatik HTML Raporlama (Extent Reports / Allure Report).
+- [x] **Adım 8:** GitHub Actions entegrasyonu ile CI/CD Pipeline (Headless test çalıştırma).
 
 ---
 
