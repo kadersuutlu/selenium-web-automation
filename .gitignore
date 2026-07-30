@@ -49,3 +49,6 @@ Thumbs.db
 # Yerel sürücü ikilileri (Driver'lar projeye elle eklendiyse)
 *.exe
 *.driver
+
+/allure-results/
+/allure-report/
