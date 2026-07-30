@@ -21,6 +21,8 @@ public class LoginPage {
     private By passwordInput=By.id("password");
     private By loginButton=By.id("login-button");
 
+    private By errorMessage=By.cssSelector("[data-test='error']");
+
     public void enterUserName(String userName){
         wait.until(ExpectedConditions.visibilityOfElementLocated(userNameInput)).sendKeys(userName);
     }
@@ -37,5 +39,9 @@ public class LoginPage {
         enterUserName(username);
         enterPassword(password);
         clickLoginButton();
+    }
+
+    public String getErrorMessage(){
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(errorMessage)).getText();
     }
 }

@@ -20,4 +20,11 @@ public class LoginTest extends BaseTest {
         new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.urlContains("inventory"));
         Assert.assertTrue(driver.getCurrentUrl().contains("inventory"));
     }
+
+    @Test
+    public void loginWithLockedOutUser_shouldShowsError(){
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login("locked_out_user","secret_sauce");
+        Assert.assertTrue(loginPage.getErrorMessage().contains("locked out"));
+    }
 }
