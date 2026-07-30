@@ -1,3 +1,6 @@
+package tests;
+
+import base.BaseTest;
 import org.example.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,16 +11,13 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class LoginTest {
+public class LoginTest extends BaseTest {
     @Test
     public void loginTest(){
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.saucedemo.com");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login("standard_user","secret_sauce");
 
         new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.urlContains("inventory"));
         Assert.assertTrue(driver.getCurrentUrl().contains("inventory"));
-        driver.quit();
     }
 }
