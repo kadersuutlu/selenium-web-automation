@@ -1,9 +1,8 @@
 package org.example;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
@@ -20,6 +19,14 @@ public class Main {
         driver.get("https://www.saucedemo.com");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        WebElement userNameInput=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("user-name")));
+        WebElement passwordInput=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password")));
+        WebElement loginButton=wait.until(ExpectedConditions.elementToBeClickable(By.id("login-button")));
+
+        userNameInput.sendKeys("standard_user");
+        passwordInput.sendKeys("secret_sauce");
+        loginButton.click();
 
         File directory = new File("screenshots");
         if(!directory.exists()){
