@@ -168,4 +168,4 @@ Testlerin her `push` ve `pull request` işleminde, bulut üzerinde otomatik olar
 
 ## 📝 İlgili Yazı
 
-Bu projenin geliştirilme sürecini anlatan yazıya buradan ulaşabilirsiniz: *(Medium yazı linkini buraya ekle)*
+Bu projenin geliştirilme sürecini anlatan yazıya buradan ulaşabilirsiniz: *(https://sutlukader.medium.com/selenium-ile-s%C4%B1f%C4%B1rdan-s%C3%BCrd%C3%BCr%C3%BClebilir-bir-test-otomasyonu-kurmak-9c9d97a7573c)*
